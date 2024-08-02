@@ -14,8 +14,8 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   demo:
+    environment: PROD
     runs-on: ubuntu-latest
-    envornment: PROD
     steps:
       - uses: actions/checkout@v4
       - name: Run a one-line script
